@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    js_bom.html
     <p id="result1"></p>
     <p id="result2"></p>
     
@@ -14,9 +14,11 @@
 
     <p id="result5"></p>
     <p id="result6"></p>
+
+    <p id="result7"></p>
     
     <script>
-
+/*
         var windowX = window.innerWidth;
         
         //var windowX = document.body.clientWidth;
@@ -41,6 +43,17 @@
 
         document.getElementById("result5").innerHTML = "Screen avail Width is : " + windowXxx;
         document.getElementById("result6").innerHTML = "Screen avail Height is : " + windowYyy;
+
+        var windowColor = screen.colorDepth;
+        
+        document.getElementById("result7").innerHTML = "Screen colorDepth is : " + windowColor;
+*/
+
+        var windowHref = window.location.href;
+        document.getElementById("result1").innerHTML = windowHref;
+
+        var windowHost = window.location.hostname;
+        document.getElementById("result2").innerHTML = windowHost;
     </script>
 
 </body>
