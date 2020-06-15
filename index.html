@@ -7,11 +7,34 @@
 <body>
     <p id="result"></p>
     <script>
-        document.cookie = " username = Kevin ";
-        // document.cookie = "username = " + a ;
+        //document.cookie = " username = Kevin; expires=Fr1, 19 June 2020 00:00:00 UTC; ///path=/naver/;";
+        //document.cookie = " sex = male";
+        
+        
+        //document.cookie = " username = ; expires=Mon, 1 June 2020 00:00:00 UTC;";
+        //document.cookie = " sex = male";
+
+        document.cookie = " username=Kevin";
+        document.cookie = " sex=male";
+        document.cookie = " age=20;";
+        
         var x = document.cookie;
-        document.getElementById("result").innerHTML = x;
-    
+
+        document.getElementById("result").innerHTML = getCookie(username);
+        
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(";");
+            for (i=0; i<ca.length; i++)
+            {var c = ca[i];
+                while (c.charAt(0) == "")
+                {c = c.substring(1);}
+                if (c.indexOf(name) == 0)
+                {return c.substring(name.length, c.length);}
+            }
+                return "";
+        }
     </script>
     
 </body>
