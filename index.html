@@ -5,65 +5,14 @@
     <title>Document</title>
 </head>
 <body>
-    js_bom.html
-    <p id="result1"></p>
-    <p id="result2"></p>
-    
-    <p id="result3"></p>
-    <p id="result4"></p>
-
-    <p id="result5"></p>
-    <p id="result6"></p>
-
-    <p id="result7"></p>
-    
+    <p id="result"></p>
     <script>
-/*
-        var windowX = window.innerWidth;
-        
-        //var windowX = document.body.clientWidth;
-        
-        var windowY = window.innerHeight;
-        
-        //var windowY = document.body.clientHeight;
-        
-        var windowXx = screen.width;
-        
-        var windowYy = screen.height;
-
-        var windowXxx = screen.availWidth;
-        
-        var windowYyy = screen.availHeight; // 위 아래 바를 뺀 높이
-        
-        document.getElementById("result1").innerHTML = "Window Width is : " + windowX;
-        document.getElementById("result2").innerHTML = "Window Height is : " + windowY;
-
-        document.getElementById("result3").innerHTML = "Screen Width is : " + windowXx;
-        document.getElementById("result4").innerHTML = "Screen Height is : " + windowYy;
-
-        document.getElementById("result5").innerHTML = "Screen avail Width is : " + windowXxx;
-        document.getElementById("result6").innerHTML = "Screen avail Height is : " + windowYyy;
-
-        var windowColor = screen.colorDepth;
-        
-        document.getElementById("result7").innerHTML = "Screen colorDepth is : " + windowColor;
-*/
-
-        var windowHref = window.location.href;
-        document.getElementById("result1").innerHTML = windowHref;
-
-        var windowHost = window.location.hostname;
-        document.getElementById("result2").innerHTML = windowHost;
-
-        var windowPate = window.location.pathname;
-        document.getElementById("result3").innerHTML = windowPate;
-
-        var windowPro = window.location.protocol;
-        document.getElementById("result4").innerHTML = windowPro;
-
-        var windowPort = window.location.port;
-        document.getElementById("result5").innerHTML = windowPort;
+        document.cookie = " username = Kevin ";
+        // document.cookie = "username = " + a ;
+        var x = document.cookie;
+        document.getElementById("result").innerHTML = x;
+    
     </script>
-
+    
 </body>
 </html>
